@@ -98,7 +98,7 @@ public class Lexer {
     {
         if (!"0123456789".contains(getCurrentChar())) return false;
         String value = "";
-        while ("0123456789".contains(getCurrentChar()))
+        while (hasNext() &&"0123456789".contains(getCurrentChar()))
         {
             value += getCurrentChar();
             next();

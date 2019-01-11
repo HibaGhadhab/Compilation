@@ -3,9 +3,11 @@ import java.util.List;
 
 public class Main
 {
-    public static String CODE = "7 + 3 * 2 * ( 2 + 3 )";
+    //public static String CODE = "7 + 3 * 2 * ( 2 + 3 )";
+    public static String CODE = "( 2 + 5 ) * 3";
+
     public static int position = 0;
-    public static List<Token> tokens;
+    public static List<Token> tokens; //à enlever
 
     public static void main (String args[]) {
         System.out.println("\n ************* Lexer *************");
